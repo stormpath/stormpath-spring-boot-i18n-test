@@ -9,7 +9,6 @@
         <artifactId>oss-parent</artifactId>
         <version>7</version>
     </parent>
-
     <groupId>com.stormpath.test</groupId>
     <artifactId>stormpath-spring-boot-i18n-test</artifactId>
     <version>1-SNAPSHOT</version>
@@ -21,7 +20,7 @@
         <url>https://stormpath.com</url>
     </organization>
 
-    <!-- 
+    <!--
     <scm>
         <connection>scm:git:git@github.com:stormpath/chancellor.git</connection>
         <developerConnection>scm:git:git@github.com:stormpath/chancellor.git</developerConnection>
@@ -40,7 +39,7 @@
         <spring.version>4.2.6.RELEASE</spring.version>
         <spring.boot.version>1.3.5.RELEASE</spring.boot.version>
         <spring.cloud.version>Brixton.RELEASE</spring.cloud.version>
-        <spring.cloud.config.server.version>1.1.0.RELEASE</spring.cloud.config.server.version>
+        <spring.cloud.config.server.version>1.1.2.RELEASE</spring.cloud.config.server.version>
         <spring.security.version>4.0.4.RELEASE</spring.security.version>
         <stormpath.sdk.version>1.0.0.RC-SNAPSHOT</stormpath.sdk.version>
 
@@ -71,6 +70,11 @@
                         <artifactId>httpclient</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-config-client</artifactId>
+                <version>${spring.cloud.config.server.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.stormpath.spring</groupId>
